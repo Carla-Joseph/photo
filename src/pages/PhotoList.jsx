@@ -13,21 +13,23 @@ class PhotoList extends Component {
           <span>{heading}</span>
         </div>
         <h1>{heading}</h1>
-        <p>{subHeading} hey </p>
-        {photoData &&
-          photoData.photos &&
-          photoData.photos.map((photo, index) => {
-            return (
-              <div>
-                <h5>
-                  <Link to={`/${linkPath}/${index}`}>{photo.title}</Link>
-                </h5>
-                <a href={`/${linkPath}/${index}`}>
-                  <img width="200" src={photo.imageURL} />
-                </a>
-              </div>
-            )
-          })}
+        <p>{subHeading}</p>
+        <div className="allPhotos">
+          {photoData &&
+            photoData.photos &&
+            photoData.photos.map((photo, index) => {
+              return (
+                <div className="pageTwo">
+                  <a href={`/${linkPath}/${index}`}>
+                    <img width="200" src={photo.imageURL} />
+                  </a>
+                  <p>
+                    <Link to={`/${linkPath}/${index}`}>{photo.title}</Link>
+                  </p>
+                </div>
+              )
+            })}
+        </div>
       </div>
     )
   }

@@ -19,14 +19,12 @@ export default class PhotoDetail extends Component {
     return (
       <div>
         <div>
-          <Link to="/">Home</Link>
-          &gt;
-          <Link to={`/${listBreadCrumbLink}`}>{listBreadCrumbText}</Link>
-          &gt;
+          <Link to="/">Home</Link> /
+          <Link to={`/${listBreadCrumbLink}`}>{listBreadCrumbText}</Link> /
           <span>{photo.title}</span>
         </div>
         <h1>{photo.title}</h1>
-        <img src={photo.imageURL} width="400" />
+        <img src={photo.imageURL} width="100%" />
       </div>
     )
   }

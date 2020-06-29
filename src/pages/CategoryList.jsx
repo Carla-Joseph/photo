@@ -20,7 +20,7 @@ class HomePage extends Component {
 
         <section className="paintings">
           <h2 class="text ml-4 mt-4 mb-0">
-            <Link to="/paintings">Miniature paintings</Link>
+            <Link to="/paintings">Miniature Paintings</Link>
           </h2>
           <p class="text-left m-4">
             I enjoy painting miniatures from board games. I've been painting
