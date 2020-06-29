@@ -8,9 +8,7 @@ class PhotoList extends Component {
     return (
       <div>
         <div>
-          <Link to="/">Home</Link>
-          &gt;
-          <span>{heading}</span>
+          <Link to="/">Home</Link> / <span>{heading}</span>
         </div>
         <h1>{heading}</h1>
         <p>{subHeading}</p>
@@ -19,9 +17,9 @@ class PhotoList extends Component {
             photoData.photos &&
             photoData.photos.map((photo, index) => {
               return (
-                <div className="pageTwo">
+                <div className="photo">
                   <a href={`/${linkPath}/${index}`}>
-                    <img width="200" src={photo.imageURL} />
+                    <img width="100%" src={photo.imageURL} />
                   </a>
                   <p>
                     <Link to={`/${linkPath}/${index}`}>{photo.title}</Link>

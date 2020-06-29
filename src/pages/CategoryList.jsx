@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class HomePage extends Component {
   render() {
     return (
-      <section className="body ">
+      <section className="body">
         <section className="pandas">
           <h2 class="text ml-4 mt-4">
             <Link to="/pandas">Panda Bears</Link>
@@ -14,7 +14,7 @@ class HomePage extends Component {
             the cutest animals on earth.
           </p>
           <figure className="pandaImage mb-0">
-            <img src="/images/baby_panda.jpg" width="100%" height="100%" />
+            <img src="/images/baby_panda.jpg" width="100%" />
           </figure>
         </section>
 
